@@ -50,10 +50,10 @@ with st.sidebar:
 
   data = {
     'island':island,
-    'bill_length_mm':
-    'bill_depth_mm':
-    'flipper_length_mm': flipper_length_mm
-    'boddy_mass_g': boddy_mass_g
+    'bill_length_mm':bill_length_mm,
+    'bill_depth_mm':bill_depth_mm,
+    'flipper_length_mm': flipper_length_mm,
+    'boddy_mass_g': boddy_mass_g,
     'gender':gender
   }
 
