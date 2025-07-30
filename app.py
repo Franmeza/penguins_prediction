@@ -30,7 +30,7 @@ with st.expander("Data"):
   
 with st.expander("Data Visualization"):
   st.scatter_chart(data=df, x='bill_length_mm',y='body_mass_g',color='species')
-  fig = px.box(df, x='specie', y='bill_length_mm', points='all', title='Box Plot')
+  fig = px.box(df, x='species', y='bill_length_mm', points='all', title='Box Plot')
   st.plotly_chart(fig)
   
 with st.expander("Input Data"):
