@@ -12,7 +12,7 @@ with st.expander("Data"):
   df
 
   st.write("Input Variables")
-  X_raw = df.drop('Species',axis = 1)
+  X_raw = df.drop('species',axis = 1)
   X_raw
 
   st.write("Target Variables")
