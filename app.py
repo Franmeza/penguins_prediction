@@ -28,7 +28,7 @@ with st.expander("Data"):
   inf
   
 with st.expander("Data Visualization"):
-  pass
+  st.scatteer_chart(data=df, x='bill_length_mm',y='body_mass_g',color='species')
   
 with st.expander("Input Data"):
   pass
