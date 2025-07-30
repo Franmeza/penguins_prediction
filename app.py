@@ -19,4 +19,10 @@ with st.expander("Data Preparation"):
   pass
 
 with st.sidebar:
-  pass
+  st.header("Input Variables")
+  island = st.selectbox('Island',('Biscoe','Dream','Torgersen'))
+  bill_length_mm = st.slider("Bill length (mm)",32.0,60.0,43.9)
+  bill_depth_mm = st.slider("Bill length (mm)",13.0,22.0,18.0)
+  flipper_length_mm = st.slider("Bill length (mm)",172.0,231.0,201.0)
+  boddy_mass_g = st.slider("Bill length (mm)",2700.0,6300.0,4207.0)
+  gender = st.selectbox("Gender",("Male","Female"))
