@@ -33,8 +33,11 @@ with st.expander("Data Visualization"):
   fig = px.box(df, x='species', y='bill_length_mm', title='Box Plot')
   st.plotly_chart(fig)
   
-with st.expander("Input Data"):
-  pass
+with st.expander("Input data"):
+  st.write("**Input data**")
+  input_df
+  st.write("**Combined Data**")
+  input_penguins
 
 with st.expander("Data Preparation"):
   pass
@@ -60,10 +63,6 @@ with st.sidebar:
   input_df = pd.DataFrame(data, index=[0])
   input_penguins = pd.concat([input_df, X_raw], axis = 0)
 
-with st.expander("Input data"):
-  st.write("**Input data**")
-  input_df
-  st.write("**Combined Data**")
-  input_penguins
+
   
   
